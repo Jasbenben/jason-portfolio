@@ -89,7 +89,7 @@ const Hero = () => {
 
             {/* Belief Statement */}
             <p className="text-lg md:text-xl text-secondary leading-relaxed max-w-xl">
-            I build things that interest me: creative tools, technical experiments, and systems that feel refreshing and original. I like ideas that break patterns, and I enjoy turning them into real, working software. Some of my work explores new formats, some simplifies complex tasks, but all of it comes from curiosity.
+            I have a curious mind and build things that genuinely interest me: creative tools, technical experiments, and systems that feel refreshing and original. I like ideas that break patterns, and I enjoy turning them into real, working software. Some of my work explores new formats, some simplifies complex tasks, but all of it comes from curiosity.
             </p>
           </motion.div>
 
