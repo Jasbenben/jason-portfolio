@@ -37,15 +37,34 @@ const ProjectCard = ({ project, onClick }: { project: ProjectData; onClick: () =
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         whileHover={{ y: -2 }}
-        className="border border-border bg-[#1A1B1D] overflow-hidden cursor-pointer transition-colors hover:border-accent group"
+        className="border border-border bg-[#1A1B1D] overflow-hidden cursor-pointer transition-colors hover:border-accent group relative"
       >
+        {/* Subtle arrow indicator in corner */}
+        <div className="absolute top-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <svg 
+            width="20" 
+            height="20" 
+            viewBox="0 0 20 20" 
+            fill="none" 
+            className="text-accent"
+          >
+            <path 
+              d="M5 15L15 5M15 5H7M15 5V13" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+
         {/* Image preview */}
         <div className="relative w-full h-44 border-b border-border bg-black/40 overflow-hidden">
           <Image
             src={project.image}
             alt={project.imageAlt}
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
         </div>
 
@@ -86,7 +105,7 @@ const Projects = () => {
             Selected Projects
           </h2>
           <p className="text-secondary text-lg">
-            Systems, marketplaces, and tools I&apos;ve shipped.
+            Systems, marketplaces, and tools I&apos;ve shipped. Click to explore each project.
           </p>
         </div>
 
