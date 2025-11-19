@@ -1,0 +1,6 @@
+Place your static assets here:
+- Profile image
+- Project screenshots
+- Favicon
+- Any other static files
+
