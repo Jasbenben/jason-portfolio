@@ -86,7 +86,7 @@ const Projects = () => {
             Selected Projects
           </h2>
           <p className="text-secondary text-lg">
-            Systems, marketplaces, and tools I've shipped.
+            Systems, marketplaces, and tools I&apos;ve shipped.
           </p>
         </div>
 
