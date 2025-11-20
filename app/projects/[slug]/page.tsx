@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${project.title} · Jason Bennet`,
+    title: `${project.title} · Jason Bennett`,
     description: project.information[0].substring(0, 160),
   };
 }
@@ -54,7 +54,7 @@ export default function ProjectDetailPage({ params }: { params: { slug: string }
           {/* Center: Name */}
           <div className="text-center">
             <h1 className="text-sm md:text-base font-medium text-text-primary uppercase tracking-[0.2em]">
-              Jason Bennet
+              Jason Bennett
             </h1>
           </div>
 
